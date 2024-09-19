@@ -90,8 +90,10 @@ var wsHook = {};
         WSObject._addEventListener.apply(this, ['message', onMessageHandler, false])
       }
     })
-
     return WSObject
   }
-Object.defineProperty(window.WebSocket, 'OPEN', { value: 1 });
+WebSocket.CONNECTING = _WS.CONNECTING;
+WebSocket.OPEN = _WS.OPEN;
+WebSocket.CLOSING = _WS.CLOSING;
+WebSocket.CLOSED = _WS.CLOSED;
 })()
