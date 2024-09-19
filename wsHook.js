@@ -96,4 +96,4 @@ WebSocket.CONNECTING = _WS.CONNECTING;
 WebSocket.OPEN = _WS.OPEN;
 WebSocket.CLOSING = _WS.CLOSING;
 WebSocket.CLOSED = _WS.CLOSED;
-})()
+})();
