@@ -47,8 +47,8 @@ var wsHook = {};
     wsHook.modifyUrl = modifyUrl
   }
 
-  var _WS = unsafeWindow.WebSocket
-  unsafeWindow.WebSocket = function (url, protocols) {
+  var _WS = window.WebSocket
+  window.WebSocket = function (url, protocols) {
     var WSObject
     url = wsHook.modifyUrl(url) || url
     this.url = url
