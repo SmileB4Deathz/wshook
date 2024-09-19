@@ -93,4 +93,5 @@ var wsHook = {};
 
     return WSObject
   }
+Object.defineProperty(window.WebSocket, 'OPEN', { value: 1 });
 })()
